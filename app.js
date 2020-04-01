@@ -2,7 +2,7 @@ var ex=require('express');
 var parse=require('body-parser');
 var host=ex();
 host.use(parse.urlencoded({extended:false}));
-host.get('/odd',(req,res)=>{
+host.get('/',(req,res)=>{
     var n=200;
     var i;
     for (i = 1; i <= n; i++) {
